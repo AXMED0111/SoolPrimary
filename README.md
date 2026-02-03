@@ -1,4 +1,3 @@
-[index.html](https://github.com/user-attachments/files/25039790/index.html)
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,16 +28,16 @@
     /* Tabs */
     .tabs { display: flex; gap: 6px; margin-bottom: 20px; flex-wrap: wrap; }
     .tab-btn {
-      padding: 10px 12px;
+      padding: 12px;
       background: #f1f5f9;
       border: none;
-      border-radius: 10px;
+      border-radius: 12px;
       font-weight: 600;
-      font-size: 15px;
+      font-size: 16px;
       cursor: pointer;
       transition: all 0.2s;
       flex: 1;
-      min-width: 90px;
+      min-width: 80px;
       text-align: center;
     }
     .tab-btn.active { background: #3b82f6; color: white; }
@@ -52,7 +51,7 @@
     }
     .date-field input {
       flex: 1;
-      padding: 12px;
+      padding: 14px;
       border: 1px solid #cbd5e1;
       border-radius: 12px;
       font-size: 16px;
@@ -61,7 +60,7 @@
       background: #10b981;
       color: white;
       border: none;
-      padding: 12px 16px;
+      padding: 14px 16px;
       border-radius: 12px;
       font-weight: 600;
       cursor: pointer;
@@ -76,7 +75,7 @@
     }
     .session-btn {
       flex: 1;
-      padding: 14px;
+      padding: 16px;
       border: none;
       border-radius: 12px;
       font-weight: 600;
@@ -96,12 +95,17 @@
     /* Status Buttons */
     .status-buttons {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 10px;
       margin-bottom: 20px;
     }
+    @media (min-width: 480px) {
+      .status-buttons {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
     .status-btn {
-      padding: 12px;
+      padding: 14px;
       border: none;
       border-radius: 12px;
       font-weight: 600;
@@ -124,7 +128,7 @@
       color: white;
       border: none;
       width: 100%;
-      padding: 16px;
+      padding: 18px;
       border-radius: 12px;
       font-size: 18px;
       font-weight: 700;
@@ -139,7 +143,7 @@
       color: white;
       border: none;
       width: 100%;
-      padding: 16px;
+      padding: 18px;
       border-radius: 12px;
       font-size: 18px;
       font-weight: 700;
@@ -149,13 +153,13 @@
 
     /* Form groups */
     .form-group {
-      margin-bottom: 16px;
+      margin-bottom: 18px;
     }
     label {
       display: block;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
       font-weight: 600;
-      font-size: 15px;
+      font-size: 16px;
     }
     input, select {
       width: 100%;
@@ -172,7 +176,7 @@
     }
 
     .message {
-      padding: 12px;
+      padding: 14px;
       border-radius: 12px;
       text-align: center;
       margin-top: 16px;
@@ -202,7 +206,7 @@
           <label>Password</label>
           <input type="password" id="password" required />
         </div>
-        <button type="submit" class="btn-primary" style="width:100%;background:#0ea5e9;color:white;border:none;padding:14px;border-radius:12px;font-weight:600;">
+        <button type="submit" class="btn-primary" style="width:100%;background:#0ea5e9;color:white;border:none;padding:16px;border-radius:12px;font-weight:600;">
           Sign In
         </button>
         <div id="loginError" class="message error"></div>
@@ -321,7 +325,7 @@
             <option value="8aad">Grade 8</option>
           </select>
         </div>
-        <button type="button" class="btn-primary" style="width:100%;background:#0ea5e9;color:white;padding:14px;border-radius:12px;font-weight:600;" onclick="registerStudent()">
+        <button type="button" class="btn-primary" style="width:100%;background:#0ea5e9;color:white;padding:16px;border-radius:12px;font-weight:600;" onclick="registerStudent()">
           Register Student
         </button>
         <button type="button" class="btn-logout" style="margin-top:10px;" onclick="logout()">Logout</button>
@@ -372,7 +376,7 @@
           <label>Payment Date *</label>
           <input type="date" id="feeDate" required />
         </div>
-        <button type="button" class="btn-primary" style="width:100%;background:#0ea5e9;color:white;padding:14px;border-radius:12px;font-weight:600;" onclick="recordFee()">
+        <button type="button" class="btn-primary" style="width:100%;background:#0ea5e9;color:white;padding:16px;border-radius:12px;font-weight:600;" onclick="recordFee()">
           Record Payment
         </button>
         <button type="button" class="btn-logout" style="margin-top:10px;" onclick="logout()">Logout</button>
@@ -407,7 +411,7 @@
             <option value="not_active">Not Active</option>
           </select>
         </div>
-        <button type="button" class="btn-primary" style="width:100%;background:#0ea5e9;color:white;padding:14px;border-radius:12px;font-weight:600;" onclick="updateStudentStatus()">
+        <button type="button" class="btn-primary" style="width:100%;background:#0ea5e9;color:white;padding:16px;border-radius:12px;font-weight:600;" onclick="updateStudentStatus()">
           Update Status
         </button>
         <button type="button" class="btn-logout" style="margin-top:10px;" onclick="logout()">Logout</button>
@@ -431,7 +435,7 @@
             <option value="admin">Admin</option>
           </select>
         </div>
-        <button type="button" class="btn-primary" style="width:100%;background:#0ea5e9;color:white;padding:14px;border-radius:12px;font-weight:600;" onclick="addUser()">
+        <button type="button" class="btn-primary" style="width:100%;background:#0ea5e9;color:white;padding:16px;border-radius:12px;font-weight:600;" onclick="addUser()">
           Add User
         </button>
 
@@ -444,7 +448,7 @@
           <label>New Password *</label>
           <input type="password" id="cpPass" required />
         </div>
-        <button type="button" class="btn-primary" style="width:100%;background:#0ea5e9;color:white;padding:14px;border-radius:12px;font-weight:600;" onclick="changePassword()">
+        <button type="button" class="btn-primary" style="width:100%;background:#0ea5e9;color:white;padding:16px;border-radius:12px;font-weight:600;" onclick="changePassword()">
           Change Password
         </button>
         <button type="button" class="btn-logout" style="margin-top:10px;" onclick="logout()">Logout</button>
@@ -453,12 +457,12 @@
   </div>
 
   <script>
-    // 🔗 YOUR NEW GOOGLE APPS SCRIPT URL (WITH doGet)
+    // 🔗 YOUR GOOGLE APPS SCRIPT URL (MUST INCLUDE doGet)
     const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwloLCsXF7mQ8PcRM5dB5pAOK2pEyPPqWkNpg29ZXl7e_lVcC-Idnqm0297RJE9UGaGpQ/exec';
     
     let currentUser = '';
     let userRole = '';
-    let studentCache = []; // Stores active students for auto-fill
+    let studentCache = [];
 
     function setToday() {
       document.getElementById('attDate').value = new Date().toISOString().split('T')[0];
@@ -513,7 +517,6 @@
       }
     });
 
-    // Also update when class changes
     document.getElementById('attClass').addEventListener('change', function() {
       const roll = document.getElementById('attRoll').value;
       if (roll) {
@@ -521,22 +524,21 @@
       }
     });
 
-    // Login
+    // ✅ FIXED LOGIN — case-insensitive + trim
     document.getElementById('loginForm').addEventListener('submit', async function(e) {
       e.preventDefault();
-      const u = document.getElementById('username').value.trim();
-      const p = document.getElementById('password').value;
-      
+      const u = document.getElementById('username').value.trim().toUpperCase();
+      const p = document.getElementById('password').value.trim();
+
       if (u === 'AHMED' && p === '6884433@@') {
-        currentUser = u;
+        currentUser = 'AHMED';
         userRole = 'admin';
-        document.getElementById('userDisplay').textContent = `Logged in as: ${u} (Admin)`;
+        document.getElementById('userDisplay').textContent = `Logged in as: ${currentUser} (Admin)`;
         document.getElementById('loginContainer').style.display = 'none';
         document.getElementById('appContainer').style.display = 'block';
-        
-        // Load student data for auto-fill
+
         await loadStudentData();
-        
+
         document.getElementById('mainTabs').innerHTML = `
           <button class="tab-btn" onclick="showTab('register')">Register</button>
           <button class="tab-btn active" onclick="showTab('attendance')">Attendance</button>
@@ -550,17 +552,16 @@
         document.getElementById('userDisplay').textContent = `Logged in as: ${u} (Teacher)`;
         document.getElementById('loginContainer').style.display = 'none';
         document.getElementById('appContainer').style.display = 'block';
-        
-        // Load student data for teachers too
+
         await loadStudentData();
-        
+
         document.getElementById('mainTabs').innerHTML = `
           <button class="tab-btn active" onclick="showTab('attendance')">Attendance</button>
         `;
       }
     });
 
-    // Fetch active students from Google Sheet
+    // Fetch active students
     async function loadStudentData() {
       try {
         const url = SCRIPT_URL.replace('/exec', '') + '?action=getStudents';
@@ -569,7 +570,7 @@
           studentCache = await response.json();
         }
       } catch (err) {
-        console.error('Failed to load student data:', err);
+        console.error('Failed to load student ', err);
       }
     }
 
