@@ -1,4 +1,4 @@
-# Sool-Primary1
+# SoolPrimary
 [index.html](https://github.com/user-attachments/files/25039162/index.html)
 <!DOCTYPE html>
 <html lang="en">
